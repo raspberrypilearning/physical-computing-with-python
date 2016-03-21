@@ -18,8 +18,7 @@ If you don't have a pin label then this guide can help you to identify the pin n
 
 You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
-|     |     |     |
-| --- | --- | --- |
+
 | 3V3 | 3.3 volts | Anything connected to these pins will always get 3.3V of power |
 | 5V | 5 volts | Anything connected to these pins will always get 5V of power |
 | GND | ground | Zero volts, used to complete a circuit |
@@ -213,8 +212,8 @@ It would be great if you could make the LED switch on only when the button is be
 
 There are lots of other things you can control or monitor with your Raspberry Pi. Have a look at the worksheets below, to see how easily this can be done.
 
-[Using an Active Buzzer](buzzer.md)
-[Making Traffic Lights](trafficlights.md)
-[Using an LDR](ldr.md)
-[Using a PIR Sensor](pir.md)
+[Using an Active Buzzer](buzzer.md)  
+[Making Traffic Lights](trafficlights.md)  
+[Using an LDR](ldr.md)  
+[Using a PIR Sensor](pir.md)  
 
