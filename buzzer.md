@@ -10,7 +10,7 @@ An *active* buzzer can be connected just like an LED, but as they are a little m
 
 Set up the circuit as shown below.
 
-[buzzer](images/buzzer-circuit.png)
+![buzzer](images/buzzer-circuit.png)
 
 1. Add `Buzzer` to the `from gpiozero import...` line:
 
