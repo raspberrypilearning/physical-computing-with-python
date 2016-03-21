@@ -216,8 +216,5 @@ There are lots of other things you can control or monitor with your Raspberry Pi
 [Using an Active Buzzer](buzzer.md)
 [Making Traffic Lights](trafficlights.md)
 [Using an LDR](ldr.md)
-[Using a thermistor](thermistor.md)
-[Using a Temperatur probe](temperature.md)
 [Using a PIR Sensor](pir.md)
-[Using an Ultrasonic Distance Sensor](distance.md)
-[Driving a Motor without a HAT](motor.md)
+
