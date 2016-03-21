@@ -2,9 +2,9 @@
 
 ## GPIO pins
 
-The bank of pins along one side of the Raspberry Pi are called General-Purpose Input/Output.
+One powerful feature of the Raspberry Pi is the row of GPIO pins along the top edge of the board. GPIO stands for General-Purpose Input/Output. These pins are a physical interface between the Pi and the outside world. At the simplest level, you can think of them as switches that you can turn on or off (input) or that the Pi can turn on or off (output).
 
-These pins allow the Raspberry Pi to control things in the real world. You can connect components to these pins: output devices like LEDs (light emitting diodes) which can be turned on and off at will; or input devices like a button or sensor which can be used to trigger events, such as turning on an LED when a button is pressed.
+The GPIO pins are a way in which the Raspberry Pi can control and monitor the outside world by being connected to electronic circuits. The Pi is able to control LEDs, turning them on or off, or motors, or many other things. It is also able to detect whether a switch has been pressed, or temperature, or light. We refer to this as physical computing.
 
 There are 40 pins on the Raspberry Pi (26 pins on early models), and the pins provide various different functions.
 
@@ -26,6 +26,12 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 | GP2 | GPIO pin 2 | These pins are for general-purpose use and can be configured as input or output pins |
 | ID_SC/ID_SD/DNC | Special purpose pins | | |
 
+**WARNING**: If you follow the instructions, then messing about with the GPIO is safe and fun. Randomly plugging wires and power sources into your Pi, however, may kill it. Bad things can also happen if you try to connect things to your Pi that use a lot of power; LEDs are fine, motors are not. If you are worried about this, then you might want to consider using an add-on board such as the [Explorer HAT](https://shop.pimoroni.com/products/explorer-hat) until you are confident enough to use the GPIO directly.
+
+## Simple circuits
+
+If you already know about the basics of electronic circuits (You know what current, voltage and resistance are, and can use a breadboard), then you can skip onto the next section. If you are unsure about electronics, then you might want to first go and have a look at the [Getting Started with Electronics]() resource.
+
 ## Lighting an LED
 
 LEDs are delicate little things. If you put too much current through them they will pop (sometimes quite spectacularly). To limit the current going through the LED, you should always use a resitor in series with it.
@@ -46,7 +52,7 @@ The LED should now turn off, but now it's on a GPIO pin, and can therefore be co
 
 GPIO Zero is a new Python library which provides a simple interface to everyday GPIO components, it comes installed by default in Raspbian
 
-1. Open Python 3 from the main menu.
+1. Open IDLE from the main menu (`Menu`>`Programming`>`IDLE (Python 3)`.
 
 1. You can switch an LED on and off by typing commands directly into the Python interpretor window (also known as the Python shell). Let's do this by first, importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>`, type:
 
@@ -68,6 +74,8 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 	```python
 	led.off()
 	```
+
+1. Your LED should switch on and the off again. But that's not all you can do.
 
 ## Flashing an LED
 
@@ -203,6 +211,12 @@ It would be great if you could make the LED switch on only when the button is be
 
 ## What next?
 
-There are lots of other things to try with GPIO Zero. You can have a look at the documentation [here](https://gpiozero.readthedocs.org/).
+There are lots of other things you can control or monitor with your Raspberry Pi. Have a look at the worksheets below, to see how easily this can be done.
 
-Have a go at controlling other components, such as a buzzer, RGB LED, motor, or robot.
+[Making Traffic Lights]()
+[Using an LDR]()
+[Using a thermistor]()
+[Using a Temperatur probe]()
+[Using a PIR Sensor]()
+[Using an Ultrasonic Distance Sensor]()
+[Driving a Motor without a HAT]()
