@@ -1,7 +1,7 @@
-By creating a something with your Raspberry Pi you will learn:
+By working through this resources and the associated worksheets, you will learn:
 
-- How to set up a Raspberry Pi camera
 - How to use GPIO pins
 - How to create a circuit on a breadboard
-- Controlling GPIO pins with Python code
-- Controlling the camera module with Python code
+- How to control GPIO pins with Python code
+- How to use LEDs, a button, a buzzer, an LDR, a PIR and an ultrasonic distance sensor.
+

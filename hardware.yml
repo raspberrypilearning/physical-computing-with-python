@@ -1,8 +1,18 @@
-- name: Raspberry Pi camera module
-  img: camera
 - name: 1 x Solderless breadboard
   img: breadboard
-- name: 2 x Male-to-female jumper leads
+- name: Male-to-female jumper leads
   img: jumper-male-to-female
+- name: Female-to-female jumper leads
+  img: jumper-female-to-female
+- name: Male-to-male jumper leads
+  img: jumper-male-to-male
 - name: 1 x Tactile button
   img: tactile-push-button
+- name: 3 x LEDs
+  img: led.png
+- name: Ultrasonic Distance Sensor
+  img: ultrasonic-distance-sensor.png
+- name: Passive Infrared Motion Sensor
+  img: pir.png
+- name: LDR
+  img: ldr.png
