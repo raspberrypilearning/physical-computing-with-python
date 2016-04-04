@@ -1,5 +1,7 @@
 # Traffic Lights
 
+![cover](images/traffic-lights.png)
+
 For this worksheet you'll need a breadboard, three LEDs, a button, a buzzer, and the necessary jumper cables and resistors. You can purchase these individually, or get eveything you need in [CamJam Kit 1](https://thepihut.com/products/camjam-edukit)
 
 ## Wiring

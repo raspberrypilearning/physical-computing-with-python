@@ -2,7 +2,7 @@
 
 There are two main types of buzzer - *active* and *passive*.
 
-An *passive* buzzer emits a tone when a voltage is applied across it. A passive  buzzer requires a specific signal to generate a variety of tones. The *active* buzzers are a lot simpler to use, so these are covered first.
+An *passive* buzzer emits a tone when a voltage is applied across it. A passive  buzzer requires a specific signal to generate a variety of tones. The *active* buzzers are a lot simpler to use, so these are covered here.
 
 ## Connecting a buzzer
 
