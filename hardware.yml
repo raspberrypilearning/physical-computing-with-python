@@ -9,10 +9,10 @@
 - name: 1 x Tactile button
   img: tactile-push-button
 - name: 3 x LEDs
-  img: led.png
+  img: led
 - name: Ultrasonic Distance Sensor
-  img: ultrasonic-distance-sensor.png
+  img: ultrasonic-distance-sensor
 - name: Passive Infrared Motion Sensor
-  img: pir.png
-- name: LDR
-  img: ldr.png
+  img: pir
+- name: Light Dependent Resistor
+  img: ldr

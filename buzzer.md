@@ -22,7 +22,7 @@ Set up the circuit as shown below.
 1. Add a line below your creation of `button` and `lights` to add a `Buzzer` object:
 
     ```python
-    buzzer = Buzzer(15)
+    buzzer = Buzzer(17)
     ```
 
 1. In gpio zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:

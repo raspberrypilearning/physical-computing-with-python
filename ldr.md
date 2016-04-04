@@ -1,4 +1,4 @@
-# An LDR
+# A Light Dependent Resistor (LDR)
 
 ## Analogue inputs
 
@@ -24,7 +24,7 @@ By putting a resistor in series with the capacitor, you can slow the speed at wh
 
 If you time how long it takes the capacitor's voltage to get over 1.8V (or be *on*), you can work out the resistance of the component in series with it.
 
-## Light-dependent resistors (LDRs)
+## Light-dependent resistors
 
 An LDR (sometimes called a photocell) is a special type of resistor.
 
