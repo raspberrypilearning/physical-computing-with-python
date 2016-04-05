@@ -1,6 +1,6 @@
-# Traffic Lights
+# Traffic lights
 
-For this worksheet you'll need a breadboard, three LEDs, a button, a buzzer, and the necessary jumper cables and resistors. You can purchase these individually, or get eveything you need in [CamJam Kit 1](https://thepihut.com/products/camjam-edukit)
+For this worksheet you'll need a breadboard, three LEDs, a button, a buzzer, and the necessary jumper cables and resistors. You can purchase these individually, or get everything you need in the [CamJam EduKit](https://thepihut.com/products/camjam-edukit).
 
 ## Wiring
 
@@ -32,7 +32,7 @@ To get started, you'll need to place all the components on the breadboard and co
 
 ## Dive into Python
 
-Open up the Python application IDLE and get started by testing out the button.
+Open the Python application IDLE and get started by testing out the button.
 
 1. Open **Python 3** from the main menu:
 
@@ -59,7 +59,7 @@ Open up the Python application IDLE and get started by testing out the button.
 
 1. This will bring the original Python window into focus and will be constantly printing `False`. When you press the button this will switch to `True`, and when you let go it will return to `False`.
 
-    `button.is_pressed` is a property of the button object, which provides the state of the button (pressed or not) at any given time.
+    `button.is_pressed` is a property of the `button` object, which provides the state of the button (pressed or not) at any given time.
 
 1. Now return to the code window and modify your `while` loop to show the following:
 
@@ -83,7 +83,7 @@ Open up the Python application IDLE and get started by testing out the button.
         print("Released")
     ```
 
-1. When you run the code this time, nothing will happen until you press the button, when you'll see "Pressed", then when you let go it will say "Released". This will occur each time the button is pressed, but rather than continuously printing one or the other, it only does it once per press.
+1. When you run the code this time, nothing will happen until you press the button, when you'll see "Pressed", then when you let go you'll see "Released". This will occur each time the button is pressed, but rather than continuously printing one or the other, it only does it once per press.
 
 ## Add an LED
 
@@ -95,7 +95,7 @@ Now you'll add an LED into the code and use GPIO Zero to allow the button to det
     from gpiozero import Button, LED
     ```
 
-1. Add a line below `button = Button(21)` to create an instance of an LED object:
+1. Add a line below `button = Button(21)` to create an instance of an `LED` object:
 
     ```python
     led = LED(25)
@@ -227,7 +227,7 @@ Now you'll add your buzzer to make some noise.
 
 ## Traffic lights sequence
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button and a buzzer you can create your own traffic lights sequence, complete with pedestrian crossing!
+As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
 
 1. At the top of your file, below `from gpiozero import...`, add a line to import the `sleep` function:
 
@@ -276,7 +276,7 @@ As well as controlling the whole set of lights together, you can also control ea
 
 1. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving back to green until the button is pressed again.
 
-1. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually-impaired pedestrians.
+1. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
 
 ## What next?
 
