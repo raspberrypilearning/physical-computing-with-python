@@ -1,21 +1,20 @@
-# Ultrasonic Distance Sensor
+# Ultrasonic distance sensor
 
-In air, sound travels at a speed of 343ms<sup>-1</sup>. An Ultrasonic Distance Sensor sends out pulses of ultrasound (which is inaudiable to humans) and when then detects the echo that is sent back when the sound bounces off a nearby object.
+In air, sound travels at a speed of 343ms<sup>-1</sup>. An ultrasonic distance sensor sends out pulses of ultrasound, which is inaudible to humans, and detects the echo that is sent back when the sound bounces off a nearby object.
 
 ![usd](images/ultrasonic-distance-sensor.png)
 
-By knowing the speed of sound and the time taken for the ultrasound to be detected, and ultrasonic distance sensor can be used to detect how far away an object is.
+By knowing the speed of sound and the time taken for the ultrasound to be detected, an ultrasonic distance sensor can be used to detect how far away an object is.
 
-## Wiring an Ultrasonic Distance Sensor
+## Wiring an ultrasonic distance sensor
 
-To wire up an ultrasonic distance sensor, you will need to use a pair of resistors as a potential divider.
-Use the diagram below as a guide.
+To wire up an ultrasonic distance sensor, you'll need to use a pair of resistors as a potential divider. Use the diagram below as a guide.
 
 ![wiring](images/wiring-uds.png)
 
 ## Detecting distance
 
-The ultrasonic distance sensor has not yet been included in the gpiozero library, but it will be soon. Until then, you can use a generic input and output device to detect the distance of an object.
+The ultrasonic distance sensor has not yet been included in the GPIO Zero library, but it will be soon. Until then, you can use a generic input and output device to detect the distance of an object.
 
 
 ```python
