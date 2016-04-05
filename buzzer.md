@@ -1,14 +1,14 @@
 # Buzzers
 
-There are two main types of buzzer - *active* and *passive*.
+There are two main types of buzzer: *active* and *passive*.
 
-An *passive* buzzer emits a tone when a voltage is applied across it. A passive  buzzer requires a specific signal to generate a variety of tones. The *active* buzzers are a lot simpler to use, so these are covered here.
+A *passive* buzzer emits a tone when a voltage is applied across it. It also requires a specific signal to generate a variety of tones. The *active* buzzers are a lot simpler to use, so these are covered here.
 
 ## Connecting a buzzer
 
 An *active* buzzer can be connected just like an LED, but as they are a little more robust, you won't be needing a resistor to protect them.
 
-Set up the circuit as shown below.
+Set up the circuit as shown below:
 
 ![buzzer](images/buzzer-circuit.png)
 
@@ -25,7 +25,7 @@ Set up the circuit as shown below.
     buzzer = Buzzer(17)
     ```
 
-1. In gpio zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:
+1. In GPIO Zero, a `Buzzer` works exactly like an `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:
 
     ```python
     while True:
