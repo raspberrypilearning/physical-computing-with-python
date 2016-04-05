@@ -1,18 +1,18 @@
-# Getting started with Physical Computing
+# Getting started with physical computing
 
 ## GPIO pins
 
 One powerful feature of the Raspberry Pi is the row of GPIO pins along the top edge of the board. GPIO stands for General-Purpose Input/Output. These pins are a physical interface between the Raspberry Pi and the outside world. At the simplest level, you can think of them as switches that you can turn on or off (input) or that the Pi can turn on or off (output).
 
-The GPIO pins are a way in which the Raspberry Pi can control and monitor the outside world by being connected to electronic circuits. The Pi is able to control LEDs, turning them on or off, or motors, or many other things. It is also able to detect whether a switch has been pressed, or temperature, or light. We refer to this as physical computing.
+The GPIO pins allow the Raspberry Pi to control and monitor the outside world by being connected to electronic circuits. The Pi is able to control LEDs, turning them on or off, run motors, and many other things. It's also able to detect whether a switch has been pressed, the temperature, and light. We refer to this as physical computing.
 
-There are 40 pins on the Raspberry Pi (26 pins on early models), and the pins provide various different functions.
+There are 40 pins on the Raspberry Pi (26 pins on early models), and they provide various different functions.
 
-If you have a RasPIO pin label, it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
+If you have a RasPiO pin label, it can help to identify what each pin is used for. Make sure your pin label is placed with the keyring hole facing the USB ports, pointed outwards.
 
 ![](images/raspio-ports.jpg)
 
-If you don't have a pin label then this guide can help you to identify the pin numbers:
+If you don't have a pin label, then this guide can help you to identify the pin numbers:
 
 ![](images/pinout.png)
 
@@ -25,13 +25,13 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 | GP2 | GPIO pin 2 | These pins are for general-purpose use and can be configured as input or output pins |
 | ID_SC/ID_SD/DNC | Special purpose pins ||
 
-**WARNING**: If you follow the instructions, then playing about with the GPIO pins is safe and fun. Randomly plugging wires and power sources into your Pi, however, may destroy it, especially if using the 5V pins. Bad things can also happen if you try to connect things to your Pi that use a lot of power; LEDs are fine, motors are not. If you are worried about this, then you might want to consider using an add-on board such as the [Explorer HAT](https://shop.pimoroni.com/products/explorer-hat) until you are confident enough to use the GPIO directly.
+**WARNING**: If you follow the instructions, then playing about with the GPIO pins is safe and fun. Randomly plugging wires and power sources into your Pi, however, may destroy it, especially if using the 5V pins. Bad things can also happen if you try to connect things to your Pi that use a lot of power; LEDs are fine, motors are not. If you're worried about this, then you might want to consider using an add-on board such as the [Explorer HAT](https://shop.pimoroni.com/products/explorer-hat) until you're confident enough to use the GPIO directly.
 
 ## Lighting an LED
 
-LEDs are delicate little things. If you put too much current through them they will pop (sometimes quite spectacularly). To limit the current going through the LED, you should always use a resitor in series with it.
+LEDs are delicate little things. If you put too much current through them they will pop (sometimes quite spectacularly). To limit the current going through the LED, you should always use a resistor in series with it.
 
-Try connecting an LED to the Pi's 3V3 and GND pins with a resistor, anything over about 50Ω should do the trick:
+Try connecting an LED to the Pi's 3V3 and GND pins with a resistor. Anything over about 50Ω should do the trick:
 
 ![](images/led-3v3.png)
 
@@ -45,11 +45,11 @@ The LED should now turn off, but now it's on a GPIO pin, and can therefore be co
 
 ## Switching an LED on and off
 
-GPIO Zero is a new Python library which provides a simple interface to everyday GPIO components, it comes installed by default in Raspbian
+GPIO Zero is a new Python library which provides a simple interface to everyday GPIO components. It comes installed by default in Raspbian.
 
-1. Open IDLE from the main menu (`Menu`>`Programming`>`IDLE (Python 3)`.
+1. Open IDLE from the main menu (`Menu`>`Programming`>`Python 3 (IDLE)`.
 
-1. You can switch an LED on and off by typing commands directly into the Python interpretor window (also known as the Python shell). Let's do this by first, importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>`, type:
+1. You can switch an LED on and off by typing commands directly into the Python interpreter window (also known as the Python **shell**). Let's do this by first importing the GPIO Zero library. You also need to tell the Pi which GPIO pin you are using - in this case pin 17. Next to the chevrons `>>>`, type:
 
 	```python
 	from gpiozero import LED
@@ -58,7 +58,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 	```
 	Press **Enter** on the keyboard.
 
-1. To make the LED switch on, type the following and press enter:
+1. To make the LED switch on, type the following and press **Enter**:
 
 	```python
 	led.on()
@@ -70,7 +70,7 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 	led.off()
 	```
 
-1. Your LED should switch on and the off again. But that's not all you can do.
+1. Your LED should switch on and then off again. But that's not all you can do.
 
 ## Flashing an LED
 
@@ -78,9 +78,7 @@ With the help of the `time` library and a little loop, you can make the LED flas
 
 1. Create a new file by clicking **File > New file**.
 
-1. Save the new file by clicking **File > Save**.
-
-1. Save the file as `gpio_led.py`.
+1. Save the new file by clicking **File > Save**. Save the file as `gpio_led.py`.
 
 1. Enter the following code to get started:
 
@@ -103,19 +101,17 @@ With the help of the `time` library and a little loop, you can make the LED flas
 
 ## Using buttons to get input
 
-Now you are able to control an output component - an LED, let's connect and control an input component - a button. 
+Now you're able to control an output component (an LED), let's connect and control an input component: a button. 
 
-1. Connect a button to another GND pin and GPIO pin 2 like this:
+1. Connect a button to another GND pin and GPIO pin 2, like this:
 
     ![](images/button.png)
 
 1. Create a new file by clicking **File > New file**.
 
-1. Save the new file by clicking **File > Save**.
+1. Save the new file by clicking **File > Save**. Save the file as `gpio_button.py`.
 
-1. Save the file as `gpio_button.py`.
-
-1. This time you'll need the Button class, and to tell it that the button is on pin 2. Write the following code in your new file:
+1. This time you'll need the `Button` class, and to tell it that the button is on pin 2. Write the following code in your new file:
 
 	```python
 	from gpiozero import Button
@@ -129,7 +125,7 @@ Now you are able to control an output component - an LED, let's connect and cont
 	print('You pushed me')
 	```
 1. Save with **Ctrl + S** and run the code with **F5**. 
-1. Press the button for your text to appear. 
+1. Press the button and your text will appear. 
 
 ## Manually controlling the LED
 
@@ -137,9 +133,7 @@ You can now combine your two programs written so far to control the LED using th
 
 1. Create a new file by clicking **File > New file**.
 
-1. Save the new file by clicking **File > Save**.
-
-1. Save the file as `gpio_control.py`.
+1. Save the new file by clicking **File > Save**. Save the file as `gpio_control.py`.
 
 1. Now write the following code:
 
@@ -185,7 +179,7 @@ With a switch, a single press and release on the button would turn the LED on, a
 
 It would be great if you could make the LED switch on only when the button is being held down. With GPIO Zero, that's easy.
 
-1. There are two methods of the Button class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
+1. There are two methods of the `Button` class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
 
 1. Modify your code to look like this:
 
@@ -208,8 +202,8 @@ It would be great if you could make the LED switch on only when the button is be
 
 There are lots of other things you can control or monitor with your Raspberry Pi. Have a look at the worksheets below, to see how easily this can be done.
 
-[Using an Active Buzzer](buzzer.md)  
-[Making Traffic Lights](trafficlights.md)  
-[Using a Light Dependent Resistor](ldr.md)  
+[Using an active buzzer](buzzer.md)  
+[Making traffic lights](trafficlights.md)  
+[Using a light-dependent resistor](ldr.md)  
 [Using a PIR Sensor](pir.md)  
 [Using an ultrasonic distance sensor](distance.md)
