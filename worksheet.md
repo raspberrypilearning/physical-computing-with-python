@@ -27,10 +27,6 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 **WARNING**: If you follow the instructions, then playing about with the GPIO pins is safe and fun. Randomly plugging wires and power sources into your Pi, however, may destroy it, especially if using the 5V pins. Bad things can also happen if you try to connect things to your Pi that use a lot of power; LEDs are fine, motors are not. If you are worried about this, then you might want to consider using an add-on board such as the [Explorer HAT](https://shop.pimoroni.com/products/explorer-hat) until you are confident enough to use the GPIO directly.
 
-## Simple circuits
-
-If you already know about the basics of electronic circuits (You know what current, voltage and resistance are, and can use a breadboard), then you can skip onto the next section. If you are unsure about electronics, then you might want to first go and have a look at the [Getting Started with Electronics]() resource.
-
 ## Lighting an LED
 
 LEDs are delicate little things. If you put too much current through them they will pop (sometimes quite spectacularly). To limit the current going through the LED, you should always use a resitor in series with it.
