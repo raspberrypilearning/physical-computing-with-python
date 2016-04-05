@@ -1,4 +1,4 @@
-# A Light Dependent Resistor (LDR)
+# Light-dependent resistor (LDR)
 
 ## Analogue inputs
 
@@ -18,7 +18,7 @@ Capacitors are electrical components that store charge.
 
 ![](images/capacitor.png)
 
-When current is fed into a capacitor it will begin to store charge. The voltage across the capacitor will start off low, and increase as the charge builds up.
+When current is fed into a capacitor, it will begin to store charge. The voltage across the capacitor will start off low, and increase as the charge builds up.
 
 By putting a resistor in series with the capacitor, you can slow the speed at which it charges. With a high resistance, the capacitor will charge slowly, whereas a low resistance will let it charge quickly.
 
@@ -34,7 +34,7 @@ When light hits the LDR, its resistance is very low, but when it's in the dark i
 
 By placing a capacitor in series with an LDR, the capacitor will charge at different speeds depending on whether it's light or dark.
 
-## Creating a light sensing circuit
+## Creating a light-sensing circuit
 
 1.  Place an LDR into your breadboard, as shown below:
 
@@ -63,4 +63,4 @@ Use the following code to set up the light sensor:
 
 ```
 
-Run this code and then cover the LDR with your hand, and watch the value change. Try shining a strong light onto the LDR.
+Run this code, then cover the LDR with your hand and watch the value change. Try shining a strong light onto the LDR.
