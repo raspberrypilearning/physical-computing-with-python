@@ -1,1 +1,1 @@
-In this resource you will make a something do a something so that your something can do something and use something to control the something.
+In this resource you will learn how to use the GPIO pins on your Raspberry Pi to interface with electronic components, such as LEDs and PIRs.
