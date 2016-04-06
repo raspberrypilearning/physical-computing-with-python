@@ -137,18 +137,18 @@ You can now combine your two programs written so far to control the LED using th
 
 1. Now write the following code:
 
-	```python
-	from gpiozero import LED, Button
-	from time import sleep
-	
-	led = LED(17)
-	button = Button(2)
-
+    ```python
+    from gpiozero import LED, Button
+    from time import sleep
+    
+    led = LED(17)
+    button = Button(2)
+    
     button.wait_for_press()
     led.on()
-	sleep(3)
-	led.off()
-	```
+    sleep(3)
+    led.off()
+    ```
 	
 1. Save and run your program. When you push the button the LED should come on for three seconds.
 
@@ -156,7 +156,7 @@ You can now combine your two programs written so far to control the LED using th
 
 With a switch, a single press and release on the button would turn the LED on, and another press and release would turn it off again.
 
-1. Modify your code so that it looks like this. You're using a flag called `active` to record the state of the LED. The line `active = not active` will switch the flag between `True` and `False`:
+1. Modify your code so that it looks like this:
 
 	```python
 	from gpiozero import LED, Button
@@ -164,22 +164,15 @@ With a switch, a single press and release on the button would turn the LED on, a
 
 	led = LED(17)
 	button = Button(2)
-	active = False
 
 	while True:
-		if active == False:
-			led.off()
-		else:
-			led.on()
 		button.wait_for_press()
-		button.wait_for_release()
-		active = not active
-
+		led.toggle()
 	```
 
-It would be great if you could make the LED switch on only when the button is being held down. With GPIO Zero, that's easy.
+    `led.toggle()` switches the state of the LED from on to off, or off to on. Since this happens in a loop the LED with turn on and off each time the button is pressed.
 
-1. There are two methods of the `Button` class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
+1. It would be great if you could make the LED switch on only when the button is being held down. With GPIO Zero, that's easy. There are two methods of the `Button` class called `when_pressed` and `when_released`. These don't block the flow of the program, so if they are placed in a loop, the program will continue to cycle indefinitely.
 
 1. Modify your code to look like this:
 
