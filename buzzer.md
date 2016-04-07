@@ -32,6 +32,7 @@ Set up the circuit as shown below:
         buzzer.on()
 	    sleep(1)
         buzzer.off()
+		sleep(1)
 
     ```
 
@@ -41,3 +42,6 @@ Set up the circuit as shown below:
     while True:
         buzzer.beep()
     ```
+
+## What Next?
+- Have a go at building a [traffic light](trafficlights.md) system using gpiozero.

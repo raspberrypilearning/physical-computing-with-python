@@ -29,3 +29,6 @@ while True:
     if pir.motion_detected:
         print("You moved")
 ```
+
+## What Next?
+- Now you know how to use a PIR, why not have a go at building a [Parent Detector](https://www.raspberrypi.org/learning/parent-detector)
