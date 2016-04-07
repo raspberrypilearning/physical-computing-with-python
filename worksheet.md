@@ -18,7 +18,8 @@ If you don't have a pin label, then this guide can help you to identify the pin 
 
 You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
-
+|   |   |   |
+|---|---|---|
 | 3V3 | 3.3 volts | Anything connected to these pins will always get 3.3V of power |
 | 5V | 5 volts | Anything connected to these pins will always get 5V of power |
 | GND | ground | Zero volts, used to complete a circuit |
