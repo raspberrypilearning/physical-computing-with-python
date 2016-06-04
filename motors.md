@@ -173,7 +173,7 @@ So far, you have used simple on/off commands to control your motors. PWM (Pulse-
 
     The motors should now speed up from 0 (stopped) to 0.1, 0.2 and up to 1.
 
-    Note that the motor may not move until it gets to a certain speed as there may not be enough power to engage the motor.
+    Be aware, though, that the motor may not move until it gets above a certain speed as there may not be enough power to engage it.
 
 ## Motor class
 
@@ -228,7 +228,7 @@ Now you've learned how setting pins high and low can control a motor, you should
         motor2.reverse()
     ```
 
-    This will make the motors spin in opposite directions, then switching every 5 seconds. Press **Ctrl + C** to exit the loop.
+    This will make the motors spin in opposite directions, then switching every five seconds. Press **Ctrl + C** to exit the loop.
 
 1. Now stop the motors:
 
@@ -295,7 +295,7 @@ If you had a robot with two wheels, you would want to control the two motors tog
     robot.right()
     ```
 
-1. Then obviously:
+1. Then try this:
 
     ```python
     robot.left()
