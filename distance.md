@@ -101,7 +101,7 @@ As well as being able to see the distance value, you can also get the sensor to 
     ultrasonic.when_out_of_range = bye
     ```
 
-    Now these triggers are set up, you'll see "Hello" printed when the your hand is in range, and "Bye" when it's out of range.
+    Now these triggers are set up, you'll see "hello" printed when your hand is in range, and "bye" when it's out of range.
 
 1. You may have noticed that the sensor distance stopped at 1 metre. This is the default maximum and can also be configured on setup:
 
