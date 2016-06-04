@@ -12,7 +12,7 @@ The circuit connects to two GPIO pins (one for echo, one for trigger), the groun
 
 ## Code
 
-To use the Ultrasonic distance sensor in Python, you need to know which GPIO pins the echo and trigger are connected to.
+To use the ultrasonic distance sensor in Python, you need to know which GPIO pins the echo and trigger are connected to.
 
 1. Open Python 3
 
