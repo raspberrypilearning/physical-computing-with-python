@@ -10,8 +10,6 @@ In this guide, you'll be controlling two motors from your Raspberry Pi using Pyt
 
 A motor comprises two pins: positive and negative. If a 5V supply is provided to the positive pin, and 0V (ground) to the negative, it will drive forwards. If 0V is provided to the positive, and 5V to the negative, it will drive backwards. If no voltage is provided, the motor will stop.
 
-EXPLAIN H-BRIDGE...
-
 ## Wiring
 
 You'll need to wire up two motors and your battery pack using the motor controller.
@@ -313,5 +311,5 @@ If you had a robot with two wheels, you would want to control the two motors tog
 
 Now you've learned how motors work, why not try:
 
-- [Build a robot](http://raspberrypi.org/learning/robo-butler/)
+- Making your own robot with our [Build a robot](http://raspberrypi.org/learning/robo-butler/) resource
 - Make a [spinning flower wheel](http://raspberrypi.org/learning/spinning-flower-wheel/)
