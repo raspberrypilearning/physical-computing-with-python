@@ -36,9 +36,9 @@ To use the ultrasonic distance sensor in Python, you need to know which GPIO pin
     ultrasonic.distance
     ```
 
-    You should see a number, this is the distance of the nearest object, in meters.
+    You should see a number: this is the distance to the nearest object, in meters.
 
-1. Try using a loop to print the distance continuously, while waving your hand in front of it to alter the distance reading:
+1. Try using a loop to print the distance continuously, while waving your hand in front of the sensor to alter the distance reading:
 
     ```python
     while True:
@@ -77,7 +77,7 @@ As well as being able to see the distance value, you can also get the sensor to 
 
 1. Try the previous loop again and observe the new range threshold.
 
-1. The `wait_for` functions are *blocking* which means they halt the program until they are triggered. Another way of doing something when the sensor goes in and out of range is to use `when` properties, which can be used to trigger actions in the background, while other things are happening in the code.
+1. The `wait_for` functions are **blocking**, which means they halt the program until they are triggered. Another way of doing something when the sensor goes in and out of range is to use `when` properties, which can be used to trigger actions in the background, while other things are happening in the code.
 
     First, you need to create a function for what you want to happen when the sensor is in range:
 
