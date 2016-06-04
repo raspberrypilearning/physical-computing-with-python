@@ -1,6 +1,6 @@
 # Ultrasonic distance sensor
 
-In air, sound travels at a speed of 343 meters per second. An ultrasonic distance sensor sends out pulses of ultrasound (inaudible to humans) and it detects the echo that is sent back when the sound bounces off a nearby object. It then uses the speed of sound to calculate the distance from the object.
+In air, sound travels at a speed of 343 meters per second. An ultrasonic distance sensor sends out pulses of ultrasound (inaudible to humans) and detects the echo that is sent back when the sound bounces off a nearby object. It then uses the speed of sound to calculate the distance from the object.
 
 ![Ultrasonic distance sensor](images/ultrasonic-distance-sensor.png)
 
