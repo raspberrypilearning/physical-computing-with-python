@@ -77,7 +77,7 @@ As well as being able to see the distance value, you can also get the sensor to 
 
 1. Try the previous loop again and observe the new range threshold.
 
-1. The `wait_for` functions are **blocking**, which means they halt the program until they are triggered. Another way of doing something when the sensor goes in and out of range is to use `when` properties, which can be used to trigger actions in the background, while other things are happening in the code.
+1. The `wait_for` functions are **blocking**, which means they halt the program until they are triggered. Another way of doing something when the sensor goes in and out of range is to use `when` properties, which can be used to trigger actions in the background while other things are happening in the code.
 
     First, you need to create a function for what you want to happen when the sensor is in range:
 
@@ -103,7 +103,7 @@ As well as being able to see the distance value, you can also get the sensor to 
 
     Now these triggers are set up, you'll see "Hello" printed when the your hand is in range, and "Bye" when it's out of range.
 
-1. You may have noticed that the sensor distance stopped at 1 meter. This is the default maximum and can also be configured on setup:
+1. You may have noticed that the sensor distance stopped at 1 metre. This is the default maximum and can also be configured on setup:
 
     ```python
     ultrasonic = DistanceSensor(echo=17, trigger=4, max_distance=2)
@@ -121,6 +121,6 @@ As well as being able to see the distance value, you can also get the sensor to 
 
 Now you've learned to use an ultrasonic distance sensor, you could:
 
-- Build a proximity sensor alert using a buzzer or just playing sound
+- Build a proximity sensor alert using a buzzer or a sound file
 - Build a Pi camera photo booth which is activated when a person is close enough to the camera
 - Build a robot with a distance sensor to stop it bumping into other objects
