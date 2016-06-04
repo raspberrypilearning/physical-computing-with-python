@@ -114,9 +114,9 @@ First, you should learn to control motors by controlling the pins individually.
 
 ## PWM
 
-So far, you have used simple on/off commands to control your motors. PWM (Pulse-width modulation) allows you to control the speed. The `on()` function set the motor to go at full speed, but you can control this to go at a fraction of this speed.
+So far, you have used simple on/off commands to control your motors. PWM (Pulse-width modulation) allows you to control the speed. The `on()` function sets the motor to go at full speed, but you can control this to make the motor go at a fraction of this speed.
 
-1. Since you're going to reuse the same pins in a different way, you'll have to close the connections to those pins. The easiest way to do that is to restart the Python shell by clicking **Shell > Restart shell**.
+1. Since you're going to reuse the same pins in a different way, you'll have to close the connections to the pins. The easiest way to do that is to restart the Python shell by clicking **Shell > Restart shell**.
 
 1. Import the `PWMOutputDevice` class:
 
