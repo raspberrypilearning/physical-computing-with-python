@@ -110,7 +110,7 @@ First, you should learn to control motors by controlling the pins individually.
     b.off()
     ```
 
-    The motor should now spin forwards for 5 seconds, then backwards for 5 seconds, and repeat 5 times, then stop.
+    The motor should now spin forwards for 5 seconds then backwards for 5 seconds, repeat this 5 times, and then stop.
 
 ## PWM
 
