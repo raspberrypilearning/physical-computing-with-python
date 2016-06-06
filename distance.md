@@ -1,12 +1,12 @@
 # Ultrasonic distance sensor
 
-In air, sound travels at a speed of 343 meters per second. An ultrasonic distance sensor sends out pulses of ultrasound (inaudible to humans) and detects the echo that is sent back when the sound bounces off a nearby object. It then uses the speed of sound to calculate the distance from the object.
+In air, sound travels at a speed of 343 metres per second. An ultrasonic distance sensor sends out pulses of ultrasound which are inaudible to humans, and detects the echo that is sent back when the sound bounces off a nearby object. It then uses the speed of sound to calculate the distance from the object.
 
 ![Ultrasonic distance sensor](images/ultrasonic-distance-sensor.png)
 
 ## Wiring
 
-The circuit connects to two GPIO pins (one for echo, one for trigger), the ground pin and a 5V pin. You'll need to use a pair of resistors (330Ω and 470Ω) as a potential divider:
+The circuit connects to two GPIO pins (one for echo, one for trigger), the ground pin, and a 5V pin. You'll need to use a pair of resistors (330Ω and 470Ω) as a potential divider:
 
 ![wiring](images/wiring-uds.png)
 
@@ -14,7 +14,7 @@ The circuit connects to two GPIO pins (one for echo, one for trigger), the groun
 
 To use the ultrasonic distance sensor in Python, you need to know which GPIO pins the echo and trigger are connected to.
 
-1. Open Python 3
+1. Open Python 3.
 
 1. In the shell, enter the following line to import `DistanceSensor` from the GPIO Zero library:
 
@@ -36,7 +36,7 @@ To use the ultrasonic distance sensor in Python, you need to know which GPIO pin
     ultrasonic.distance
     ```
 
-    You should see a number: this is the distance to the nearest object, in meters.
+    You should see a number: this is the distance to the nearest object, in metres.
 
 1. Try using a loop to print the distance continuously, while waving your hand in front of the sensor to alter the distance reading:
 
@@ -61,7 +61,7 @@ As well as being able to see the distance value, you can also get the sensor to 
         print("Out of range")
     ```
 
-    Now wave your hand in front of the sensor and it should rotate between showing the message "In range" and "Out of range" as your hand gets closer and further away from the sensor. See if you can work out the point at which it changes.
+    Now wave your hand in front of the sensor; it should switch between showing the message "In range" and "Out of range" as your hand gets closer and further away from the sensor. See if you can work out the point at which it changes.
 
 1. The default range threshold is 0.3m. This can be configured when the sensor is initiated:
 
