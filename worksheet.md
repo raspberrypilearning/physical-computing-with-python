@@ -32,7 +32,7 @@ You'll see pins labelled as 3V3, 5V, GND and GP2, GP3, etc:
 
 LEDs are delicate little things. If you put too much current through them they will pop (sometimes quite spectacularly). To limit the current going through the LED, you should always use a resistor in series with it.
 
-Try connecting an LED to the Pi's 3V3 and GND pins with a resistor. Anything over about 50Ω should do the trick:
+Try connecting the long leg of an LED to the Pi's 3V3 and the short leg to a GND pin. The resistor can be anything over about 50Ω.
 
 ![](images/led-3v3.png)
 
