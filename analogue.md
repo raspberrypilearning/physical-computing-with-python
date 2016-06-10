@@ -1,6 +1,6 @@
 # Analogue Inputs
 
-The Raspberry Pi's GPIO pins are digital pins, so you can only set inputs high or low, or read inputs as high or low. However, using an ADC chip (Analogue-to-Digital converter), you can read the value of analogue input devices such as potentiometers.
+The Raspberry Pi's GPIO pins are digital pins, so you can only set outputs to high or low, or read inputs as high or low. However, using an ADC chip (Analogue-to-Digital converter), you can read the value of analogue input devices such as potentiometers.
 
 ## SPI
 
