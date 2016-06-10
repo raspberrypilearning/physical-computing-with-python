@@ -1,6 +1,6 @@
 # Analogue Inputs
 
-The Raspberry Pi's GPIO pins are digital pins, so you can only set inputs high or low, or read inputs as high or low. However, using an ADC chip (Analogue-to-Digital converter), you can read the value of analogue input devices such as potentiometers.
+The Raspberry Pi's GPIO pins are digital pins, so you can only set outputs to high or low, or read inputs as high or low. However, using an ADC chip (Analogue-to-Digital converter), you can read the value of analogue input devices such as potentiometers.
 
 ## SPI
 
@@ -16,25 +16,25 @@ The analogue values are communicated to the Pi using the SPI protocol. While thi
 
     ![Enable SPI](images/rcgui.png)
 
-1. Click **Ok** and reboot the Pi.
+1. Click **OK** and reboot the Pi.
 
 ## Wiring the ADC (MCP3008)
 
-The MCP3008 is an ADC providing 8 input channels. The 8 connectors on one side are connected to the Pi's GPIO pins, and the other 8 are available to connect analogue input devices to read their values.
+The MCP3008 is an ADC providing eight input channels. The eight connectors on one side are connected to the Pi's GPIO pins, and the other eight are available to connect analogue input devices to read their values.
 
-Place the MCP3008 chip on a breadboard and carefully wire it up according to the following diagram:
+Place the MCP3008 chip on a breadboard and carefully wire it up as shown in the following diagram:
 
 ![MCP3008 wiring](images/mcp3008.png)
 
-*Alternatively, use the [Analog Zero](http://rasp.io/analogzero/) board, which provides the MCP3008 chip on a handy add-on board to save you from the complicated wiring.*
+Alternatively, you could use the [Analog Zero](http://rasp.io/analogzero/) board, which provides the MCP3008 chip on a handy add-on board to save you from the complicated wiring.
 
 ## Add a potentiometer
 
-Now the ADC is connected to the Pi, you can wire up devices to the input channels. A potentiometer is a good example of an analogue input device: it's simply a variable resistor, and the Pi reads the voltage (from 0V to 3.3V).
+Now the ADC is connected to the Pi, you can wire devices up to the input channels. A potentiometer is a good example of an analogue input device: it's simply a variable resistor, and the Pi reads the voltage (from 0V to 3.3V).
 
 ![Potentiometer](images/potentiometer.jpg)
 
-A potentiometer's pins are ground, data and 3V3. This means you connect it to ground, a supply of 3V3 and read the actual voltage from the middle pin.
+A potentiometer's pins are ground, data, and 3V3. This means you connect it to ground and a supply of 3V3, and read the actual voltage from the middle pin.
 
 1. Place a potentiometer on the breadboard and wire one side to the ground rail, the other to the 3V3 rail and the middle pin to the first input channel like so:
 
