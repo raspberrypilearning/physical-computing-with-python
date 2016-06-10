@@ -16,7 +16,7 @@ The analogue values are communicated to the Pi using the SPI protocol. While thi
 
     ![Enable SPI](images/rcgui.png)
 
-1. Click **Ok** and reboot the Pi.
+1. Click **OK** and reboot the Pi.
 
 ## Wiring the ADC (MCP3008)
 
