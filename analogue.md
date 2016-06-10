@@ -91,7 +91,7 @@ Now you've tested you can read values from the potentiometer, you should connect
     from gpiozero import PWMLED
     ```
 
-    The `PWMLED` class lets you control the brightness of an LED using PWM (Pulse-width modulation)
+    The `PWMLED` class lets you control the brightness of an LED using PWM, or pulse-width modulation. 
 
 1. Create a `PWMLED` object on pin 21:
 
@@ -119,8 +119,8 @@ Now you've tested you can read values from the potentiometer, you should connect
 
 GPIO Zero has a powerful feature: **source and values**. Every device has a `value` property (the current value) and a `values` property (a stream of the device's values at all times). Every output device has a `source` property which can be used to set what the device's value should be.
 
-- `pot.value` gives the potentiometer's current value (it's read only - as it's an input device)
-- `led.value` is the LED's current value (it's read/write - you can see what it is, and you can change it)
+- `pot.value` gives the potentiometer's current value (it's read only, as it's an input device)
+- `led.value` is the LED's current value (it's read/write: you can see what it is, and you can change it)
 - `pot.values` is a generator constantly yielding the potentiometer's current value
 - `led.source` is a way of setting where the LED gets its values from
 
@@ -143,13 +143,13 @@ while True:
     pot2 = MCP3008(1)
     ```
 
-1. Blink the LED:
+1. Make the LED blink:
 
     ```python
     led.blink()
     ```
 
-    The LED will blink continuously, 1 second on, 1 second off.
+    The LED will blink continuously, one second on and one second off.
 
 1. Change the `on_time` and `off_time` parameters to make it blink faster or slower:
 
@@ -184,6 +184,6 @@ while True:
 
 - Use potentiometers to control other GPIO Zero output devices
 - Use potentiometers to control the speed of motors
-- Use potentiometers to control the visual settings of a camera module in real time
+- Use potentiometers to control the visual settings of a Camera Module in real time
 - Find more analogue sensors that will work with the ADC
 - Use potentiometers to control a player in a [PyGame Zero](http://pygame-zero.readthedocs.io) game, or in [Minecraft](https://www.raspberrypi.org/learning/getting-started-with-minecraft-pi/)
