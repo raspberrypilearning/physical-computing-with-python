@@ -282,3 +282,4 @@ As well as controlling the whole set of lights together, you can also control ea
 
 - Try adding a second button for the other side of the road. You'll probably need to use GPIO Zero `button.when_pressed` rather than `wait_for_press`, which can only be used for one button at a time.
 - Refer to the documentation at [gpiozero.readthedocs.org](https://gpiozero.readthedocs.org/) for more information on what can be done with GPIO Zero.
+- Continue to the next worksheet on using a [Light Dependent Resitor](ldr.md)

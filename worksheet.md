@@ -202,3 +202,4 @@ There are lots of other things you can control or monitor with your Raspberry Pi
 - [Using a PIR Sensor](pir.md)  
 - [Using an ultrasonic distance sensor](distance.md)
 - [Analogue inputs](analogue.md)
+- [Using motors](motors.md)

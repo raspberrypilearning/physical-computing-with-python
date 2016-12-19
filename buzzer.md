@@ -44,4 +44,5 @@ Set up the circuit as shown below:
     ```
 
 ## What Next?
-- Have a go at building a [traffic light](trafficlights.md) system using gpiozero.
+
+- Continue to the next worksheet on building a [traffic lights](trafficlights.md) system using GPIO Zero.

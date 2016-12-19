@@ -305,7 +305,7 @@ If you had a robot with two wheels you would want to control the two motors toge
 
 ## What next?
 
-Now you've learned how motors work, why not try:
+Now you've learned how motors work, you can try:
 
-- Making your own robot with our [Build a robot](http://raspberrypi.org/learning/robo-butler/) resource?
-- Making a [spinning flower wheel](http://raspberrypi.org/learning/spinning-flower-wheel/)?
+- Making your own robot with our [Build a robot](https://www.raspberrypi.org/learning/robo-butler/) resource
+- Making a [spinning flower wheel](https://www.raspberrypi.org/learning/spinning-flower-wheel/)

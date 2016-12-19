@@ -187,3 +187,4 @@ while True:
 - Use potentiometers to control the visual settings of a Camera Module in real time
 - Find more analogue sensors that will work with the ADC
 - Use potentiometers to control a player in a [PyGame Zero](http://pygame-zero.readthedocs.io) game, or in [Minecraft](https://www.raspberrypi.org/learning/getting-started-with-minecraft-pi/)
+- Continue to the next worksheet on using [Motors](motors.md)

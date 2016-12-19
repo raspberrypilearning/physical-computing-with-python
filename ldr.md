@@ -66,4 +66,6 @@ Use the following code to set up the light sensor:
 Run this code, then cover the LDR with your hand and watch the value change. Try shining a strong light onto the LDR.
 
 ## What Next?
+
 - You could have a go at using your new knowledge of LDRs to build a [laser-tripwire](https://www.raspberrypi.org/learning/laser-tripwire/).
+- Continue to the next worksheet on using a [Passive Infra-red Sensor](pir.md)

@@ -124,3 +124,4 @@ Now you've learned to use an ultrasonic distance sensor, you could:
 - Build a proximity sensor alert using a buzzer or a sound file
 - Build a Pi camera photo booth which is activated when a person is close enough to the camera
 - Build a robot with a distance sensor to stop it bumping into other objects
+- Continue to the next worksheet on [analogue inputs](analogue.md)
