@@ -10,6 +10,10 @@ In this guide, you'll be controlling two motors from your Raspberry Pi using Pyt
 
 A motor comprises two pins: positive and negative. If a 5V supply is provided to the positive pin, and 0V (ground) to the negative, it will drive forwards. If 0V is provided to the positive, and 5V to the negative, it will drive backwards. If no voltage is provided, the motor will stop.
 
+![H-Bridge](images/h-bridge.png)
+
+*Image credit: [Wikipedia](https://en.wikipedia.org/wiki/H_bridge), CC BY-SA*
+
 ## Wiring
 
 You'll need to wire up two motors and your battery pack using the motor controller.
@@ -18,9 +22,9 @@ You'll need to wire up two motors and your battery pack using the motor controll
 
     ![Motor controller board](images/mcb.png)
 
-1. Connect a battery pack to the power ports of the motor controller, connecting the positive (red) battery wire to the positive (+) power terminal on the motor controller, and the negative (black) battery wire to the negative (-) power terminal on the motor controller:
+1. Connect a battery pack to the power ports of the motor controller, connecting the positive (red) battery wire to the positive (+) power terminal on the motor controller, and the negative (black) battery wire to the negative (-) power terminal on the motor controller, and connect two motors:
 
-    ![Connect battery pack](images/battery-pack.png)
+    ![Connect battery pack](images/mcb-wiring.png)
 
 1. You'll need to know which GPIO pins your motor controller uses. Refer to the board's documentation. This will usually be described as Motor A and Motor B, or MA1, MA2, MB1, and MB2. Make a note of these pin numbers. If you're not sure which is which, you can investigate this next.
 
@@ -53,8 +57,6 @@ First, you should learn to control motors by controlling the pins individually.
 
     The motor should now be spinning! If not, check you are addressing the right pin numbers. The two pins should be connected to the same motor. Also, check your wiring and your batteries.
 
-    ![Motor forward](images/motor-forward.png)
-
 1. Now try turning that pin off, and turning the other pin on:
 
     ```python
@@ -63,8 +65,6 @@ First, you should learn to control motors by controlling the pins individually.
     ```
 
     The motor should now be spinning in the opposite direction.
-
-    ![Motor backward](images/motor-backward.png)
 
 1. To stop the motor, just make sure both motors are off:
 
@@ -179,8 +179,6 @@ So far, you have used simple on/off commands to control your motors. PWM (pulse-
 
 Now you've learned how setting pins high and low can control a motor, you should proceed to using the built-in `Motor` class; this has all the functionality you just learned about, provided in a simple way, including PWM for speed.
 
-![Motor](images/motor.png)
-
 1. Restart the shell again (**Ctrl + F6**).
 
 1. Import the `Motor` class:
@@ -240,8 +238,6 @@ Now you've learned how setting pins high and low can control a motor, you should
 ## Robot class
 
 If you had a robot with two wheels you would want to control the two motors together, rather than separately, just like you did for the two pins of each motor. Luckily, there's also a `Robot` class in GPIO Zero.
-
-![Robot](images/robot.png)
 
 1. Restart the shell again (**Ctrl + F6**).
 
