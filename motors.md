@@ -241,7 +241,7 @@ If you had a robot with two wheels you would want to control the two motors toge
 
 1. Restart the shell again (**Ctrl + F6**).
 
-1. Import the `Motor` class:
+1. Import the `Robot` class:
 
     ```python
     from gpiozero import Robot
