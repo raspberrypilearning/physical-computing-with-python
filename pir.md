@@ -31,4 +31,6 @@ while True:
 ```
 
 ## What Next?
+
 - Now you know how to use a PIR, why not have a go at building a [Parent Detector](https://www.raspberrypi.org/learning/parent-detector)
+- Continue to the next worksheet on using an [Ultrasonic Distance Sensor](distance.md)
