@@ -66,7 +66,7 @@ First, you should learn to control motors by controlling the pins individually.
 
     The motor should now be spinning in the opposite direction.
 
-1. To stop the motor, just make sure both motors are off:
+1. To stop the motor, just make sure both pins are off:
 
     ```python
     a.off()
