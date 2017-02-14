@@ -16,3 +16,5 @@
   img: pir
 - name: Light dependent resistor
   img: ldr
+- name: 5V Micro Metal Gearmotor
+  img: motor
