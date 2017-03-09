@@ -1,7 +1,9 @@
-By working through this resource and the associated worksheets, you will learn:
+By working through this resource, you will learn how to use Python and GPIO Zero to control:
 
-- How to use GPIO pins
-- How to create a circuit on a breadboard
-- How to control GPIO pins with Python code
-- How to use LEDs, a button, a buzzer, an LDR, a PIR, and an ultrasonic distance sensor.
-
+- [an active buzzer](buzzer.md)  
+- [traffic lights](trafficlights.md)  
+- [a light-dependent resistor](ldr.md)  
+- [a PIR motion sensor](pir.md)  
+- [an ultrasonic distance sensor](distance.md)
+- [analogue inputs](analogue.md)
+- [motors](motors.md)
