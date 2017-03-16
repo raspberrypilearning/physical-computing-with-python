@@ -16,6 +16,16 @@ The pulse emitted when a PIR detects motion needs to be amplified, and so it nee
 1. The `Gnd` pin on the PIR sensor can be attached to *any* ground pin on the Raspberry Pi.
 1. Lastly, the `Out` pin needs to be connected to any of the GPIO pins.
 
+## Tuning a PIR
+
+Most PIR sensors have two potentiometers on them that can control their sensitivity and also the period of time the PIR will signal for, when motion is detected.
+
+![pir pots](images/pir_pots.jpg)
+
+In the image above, the potentiometer on the right controls the sensitivity and the potentiometer on the left controls the timeout. Here, both are turned fully anit-clockwise, meaning that the sensitivity and timeout are at their lowest.
+
+When the timeout is turned fully anti-clockwise the PIR will output a signal for about 2.5 seconds, whenever potion is detected. If the potentiometer is turned fully clockwise the output signal will last for around 250 seconds. When tuning the sensitivity, it is best to have the timeout set as low as possible.
+
 ## Detecting motion
 
 You can detect motion with the PIR using the code below:
@@ -26,8 +36,9 @@ from gpiozero import MotionSensor
 pir = MotionSensor(4)
 
 while True:
-    if pir.motion_detected:
-        print("You moved")
+	pir.wait_for_motion()
+	print('You moved')
+	pir.wait_for_no_motion()
 ```
 
 ## What Next?
