@@ -1,10 +1,10 @@
 By working through this resource, you will learn how to use Python and GPIO Zero to control:
 
-- [LEDs and buttons](worksheet.md)
-- [an active buzzer](buzzer.md)  
-- [traffic lights](trafficlights.md)  
-- [a light-dependent resistor](ldr.md)  
-- [a PIR motion sensor](pir.md)  
-- [an ultrasonic distance sensor](distance.md)
-- [analogue inputs](analogue.md)
-- [motors](motors.md)
+- [LEDs and buttons](physical-computing-with-python/worksheet.md)
+- [an active buzzer](physical-computing-with-python/buzzer.md)  
+- [traffic lights](physical-computing-with-python/trafficlights.md)  
+- [a light-dependent resistor](physical-computing-with-python/ldr.md)  
+- [a PIR motion sensor](physical-computing-with-python/pir.md)  
+- [an ultrasonic distance sensor](physical-computing-with-python/distance.md)
+- [analogue inputs](physical-computing-with-python/analogue.md)
+- [motors](physical-computing-with-python/motors.md)
