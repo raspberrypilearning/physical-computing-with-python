@@ -28,4 +28,5 @@
   img: piezo-buzzer
 - name: motor controller
   img: motor-controller
-
+- name: battery pack
+  img: battery-pack
