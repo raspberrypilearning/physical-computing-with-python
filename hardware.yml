@@ -16,5 +16,16 @@
   img: pir
 - name: Light dependent resistor
   img: ldr
-- name: 5V Micro Metal Gearmotor
+- name: 2 x 5V Micro Metal Gearmotor
   img: motor
+- name: 3 x 330Ω resistors
+  img: resistor-330r
+- name: 470Ω resistor
+  img: resistor-470r
+- name: 1 x 1μF Capacitor
+  img: capacitor
+- name: Buzzer
+  img: piezo-buzzer
+- name: motor controller
+  img: motor-controller
+
