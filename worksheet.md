@@ -55,8 +55,8 @@ GPIO Zero is a new Python library which provides a simple interface to everyday 
 	```python
 	from gpiozero import LED
 	led = LED(17)
-
 	```
+    
 	Press **Enter** on the keyboard.
 
 1. To make the LED switch on, type the following and press **Enter**:
@@ -167,8 +167,9 @@ With a switch, a single press and release on the button would turn the LED on, a
 	button = Button(2)
 
 	while True:
-		button.wait_for_press()
-		led.toggle()
+	    button.wait_for_press()
+	    led.toggle()
+        sleep(1)
 	```
 
     `led.toggle()` switches the state of the LED from on to off, or off to on. Since this happens in a loop the LED with turn on and off each time the button is pressed.
