@@ -169,7 +169,7 @@ With a switch, a single press and release on the button would turn the LED on, a
 	while True:
 	    button.wait_for_press()
 	    led.toggle()
-            sleep(0.5)
+        sleep(0.5)
 	```
 
     `led.toggle()` switches the state of the LED from on to off, or off to on. Since this happens in a loop the LED will turn on and off each time the button is pressed.
