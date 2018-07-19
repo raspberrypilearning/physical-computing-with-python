@@ -1,5 +1,7 @@
 # Physical Computing with Python
 
+**This is an archived resource.** The repo will remain available but the resource will no longer be maintained or updated. Some or all parts of the resource may no longer work. To see our latest resources, please visit [raspberrypi.org](http://projects.raspberrypi.org).
+
 ![Physical Computing with Python](cover.png)
 
 In this resource you will learn how to use the GPIO pins on your Raspberry Pi to interface with electronic components, such as LEDs and PIRs.
